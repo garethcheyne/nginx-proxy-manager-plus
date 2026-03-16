@@ -26,8 +26,6 @@ This project is based on the excellent work of **Jamie Curnow** and the [Nginx P
 - **Original Author:** [Jamie Curnow (jc21)](https://github.com/jc21)
 - **License:** MIT
 
-<a href="https://www.buymeacoffee.com/jc21" target="_blank"><img src="http://public.jc21.com/github/by-me-a-coffee.png" alt="Buy Me A Coffee - Support the Original Creator" style="height: 51px !important;width: 217px !important;" ></a>
-
 ---
 
 ## New Features in Plus Edition
