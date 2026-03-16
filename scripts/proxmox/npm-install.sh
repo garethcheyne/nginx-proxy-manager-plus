@@ -179,6 +179,8 @@ build_frontend() {
 
     # Install dependencies and build
     yarn install
+    msg_info "Compiling locale files..."
+    yarn locale-compile
     yarn build
 
     msg_ok "Frontend built"

@@ -397,6 +397,8 @@ echo "==> Building frontend..."
 cd "/opt/nginx-proxy-manager-${RELEASE}/frontend"
 export NODE_OPTIONS="--openssl-legacy-provider"
 yarn install
+echo "==> Compiling locale files..."
+yarn locale-compile
 yarn build
 
 echo "==> Building backend..."
