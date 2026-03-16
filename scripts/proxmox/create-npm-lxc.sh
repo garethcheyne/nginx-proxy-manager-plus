@@ -437,11 +437,14 @@ echo "==> Configuring OpenResty..."
 ln -sf /usr/local/openresty/nginx/sbin/nginx /usr/sbin/nginx || true
 ln -sf /usr/bin/python3 /usr/bin/python || true
 
+# Create OpenResty logs directory for PID file
+mkdir -p /usr/local/openresty/nginx/logs
+
 cat > /etc/openresty/nginx.conf << 'NGINXCONF'
 user root;
 worker_processes auto;
 error_log /var/log/nginx/error.log warn;
-pid /run/nginx.pid;
+pid /usr/local/openresty/nginx/logs/nginx.pid;
 
 events {
     worker_connections 1024;
