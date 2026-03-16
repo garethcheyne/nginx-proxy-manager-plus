@@ -38,6 +38,7 @@
 		"proxy-agent": "^6.5.0",
 		"signale": "1.4.0",
 		"sqlite3": "^5.1.7",
+		"tail": "^2.2.6",
 		"temp-write": "^6.0.1"
 	},
 	"devDependencies": {

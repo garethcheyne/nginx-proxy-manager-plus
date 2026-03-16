@@ -69,11 +69,12 @@ const RedirectionHostModal = EasyModal.create(({ id, visible, remove }: Props) =
 							// Details tab
 							domainNames: data?.domainNames || [],
 							forwardDomainName: data?.forwardDomainName || "",
-							forwardScheme: data?.forwardScheme || "auto",
-							forwardHttpCode: data?.forwardHttpCode || 301,
-							preservePath: data?.preservePath || false,
-							blockExploits: data?.blockExploits || false,
-							// SSL tab
+						forwardScheme: data?.forwardScheme || "auto",
+						forwardHttpCode: data?.forwardHttpCode || 301,
+						preservePath: data?.preservePath || false,
+						blockExploits: data?.blockExploits || false,
+						analyticsEnabled: data?.analyticsEnabled !== false,
+						// SSL tab
 							certificateId: data?.certificateId || 0,
 							sslForced: data?.sslForced || false,
 							http2Support: data?.http2Support || false,
@@ -282,6 +283,29 @@ const RedirectionHostModal = EasyModal.create(({ id, visible, remove }: Props) =
 																				<input
 																					{...field}
 																					id="blockExploits"
+																					className={cn("form-check-input", {
+																						"bg-yellow": field.checked,
+																					})}
+																					type="checkbox"
+																				/>
+																			</label>
+																		)}
+																	</Field>
+																</span>
+															</label>
+														</div>
+														<div>
+															<label className="row" htmlFor="analyticsEnabled">
+																<span className="col">
+																	<T id="host.flags.analytics-enabled" />
+																</span>
+																<span className="col-auto">
+																	<Field name="analyticsEnabled" type="checkbox">
+																		{({ field }: any) => (
+																			<label className="form-check form-check-single form-switch">
+																				<input
+																					{...field}
+																					id="analyticsEnabled"
 																					className={cn("form-check-input", {
 																						"bg-yellow": field.checked,
 																					})}

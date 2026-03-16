@@ -71,6 +71,7 @@ const DeadHostModal = EasyModal.create(({ id, visible, remove }: Props) => {
 							http2Support: data?.http2Support,
 							hstsEnabled: data?.hstsEnabled,
 							hstsSubdomains: data?.hstsSubdomains,
+							analyticsEnabled: data?.analyticsEnabled !== false,
 							meta: data?.meta || {},
 						} as any
 					}
@@ -140,6 +141,29 @@ const DeadHostModal = EasyModal.create(({ id, visible, remove }: Props) => {
 													allowNew
 												/>
 												<SSLOptionsFields color="bg-red" />
+												<div className="mt-3">
+													<label className="row" htmlFor="analyticsEnabled">
+														<span className="col">
+															<T id="host.flags.analytics-enabled" />
+														</span>
+														<span className="col-auto">
+															<Field name="analyticsEnabled" type="checkbox">
+																{({ field }: any) => (
+																	<label className="form-check form-check-single form-switch">
+																		<input
+																			{...field}
+																			id="analyticsEnabled"
+																			className={cn("form-check-input", {
+																				"bg-red": field.checked,
+																			})}
+																			type="checkbox"
+																		/>
+																	</label>
+																)}
+															</Field>
+														</span>
+													</label>
+												</div>
 											</div>
 											<div className="tab-pane" id="tab-advanced" role="tabpanel">
 												<NginxConfigField />

@@ -425,6 +425,9 @@
 	"host.flags.block-exploits": {
 		"defaultMessage": "Block Common Exploits"
 	},
+	"host.flags.analytics-enabled": {
+		"defaultMessage": "Enable Analytics"
+	},
 	"host.flags.cache-assets": {
 		"defaultMessage": "Cache Assets"
 	},

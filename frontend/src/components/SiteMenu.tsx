@@ -1,5 +1,6 @@
 import {
 	IconBook,
+	IconChartBar,
 	IconDeviceDesktop,
 	IconHome,
 	IconLock,
@@ -82,6 +83,11 @@ const menuItems: MenuItem[] = [
 		label: "certificates",
 		permissionSection: CERTIFICATES,
 		permission: VIEW,
+	},
+	{
+		to: "/analytics",
+		icon: IconChartBar,
+		label: "analytics",
 	},
 	{
 		to: "/users",

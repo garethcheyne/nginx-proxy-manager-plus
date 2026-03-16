@@ -128,6 +128,7 @@ export interface ProxyHost {
 	hstsEnabled: boolean;
 	hstsSubdomains: boolean;
 	trustForwardedProto: boolean;
+	analyticsEnabled: boolean;
 	// Expansions:
 	owner?: User;
 	accessList?: AccessList;
@@ -148,6 +149,7 @@ export interface DeadHost {
 	enabled: boolean;
 	hstsEnabled: boolean;
 	hstsSubdomains: boolean;
+	analyticsEnabled: boolean;
 	// Expansions:
 	owner?: User;
 	certificate?: Certificate;
@@ -172,6 +174,7 @@ export interface RedirectionHost {
 	enabled: boolean;
 	hstsEnabled: boolean;
 	hstsSubdomains: boolean;
+	analyticsEnabled: boolean;
 	// Expansions:
 	owner?: User;
 	certificate?: Certificate;
