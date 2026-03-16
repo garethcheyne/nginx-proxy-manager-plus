@@ -346,7 +346,7 @@ ln -sf /opt/certbot/bin/certbot /usr/bin/certbot
 
 echo "==> Installing OpenResty..."
 curl -fsSL https://openresty.org/package/pubkey.gpg | gpg --dearmor -o /usr/share/keyrings/openresty.gpg
-echo "deb [signed-by=/usr/share/keyrings/openresty.gpg] http://openresty.org/package/debian $(lsb_release -cs) main" > /etc/apt/sources.list.d/openresty.list
+echo "deb [signed-by=/usr/share/keyrings/openresty.gpg] http://openresty.org/package/debian $(lsb_release -cs) openresty" > /etc/apt/sources.list.d/openresty.list
 apt-get update
 apt-get install -y openresty
 systemctl stop openresty || true
