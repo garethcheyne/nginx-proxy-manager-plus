@@ -1,0 +1,17 @@
+nohup: ignoring input
+[21/11/2025] [11:29:30 am] [Global   ] » i  info      Using configuration from file: ./config/postgres-local.json
+[21/11/2025] [11:29:30 am] [Migrate  ] » i  info      Current database version: 20251120100000
+[21/11/2025] [11:29:30 am] [Setup    ] » i  info      Logrotate Timer initialized
+[21/11/2025] [11:29:30 am] [Setup    ] » ‼  warning   Error: 'logrotate' is not recognized as an internal or external command, 
+operable program or batch file.
+
+[21/11/2025] [11:29:30 am] [Global   ] » i  info      IP Ranges fetch is enabled
+[21/11/2025] [11:29:30 am] [IP Ranges] » i  info      Fetching IP Ranges from online services...
+[21/11/2025] [11:29:30 am] [IP Ranges] » i  info      Fetching https://ip-ranges.amazonaws.com/ip-ranges.json
+[21/11/2025] [11:29:30 am] [IP Ranges] » i  info      Fetching https://www.cloudflare.com/ips-v4
+[21/11/2025] [11:29:30 am] [IP Ranges] » i  info      Fetching https://www.cloudflare.com/ips-v6
+[21/11/2025] [11:29:31 am] [SSL      ] » i  info      Let's Encrypt Renewal Timer initialized
+[21/11/2025] [11:29:31 am] [SSL      ] » i  info      Renewing SSL certs expiring within 30 days ...
+[21/11/2025] [11:29:31 am] [IP Ranges] » i  info      IP Ranges Renewal Timer initialized
+[21/11/2025] [11:29:31 am] [Global   ] » i  info      Backend PID 84788 listening on port 3000 ...
+[21/11/2025] [11:29:31 am] [SSL      ] » i  info      Completed SSL cert renew process

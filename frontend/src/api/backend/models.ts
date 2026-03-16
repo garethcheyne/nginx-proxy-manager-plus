@@ -44,6 +44,23 @@ export interface AuditLog {
 	user?: User;
 }
 
+export interface ErrorLog {
+	id: number;
+	createdOn: string;
+	modifiedOn: string;
+	userId: number;
+	errorType: string;
+	errorCode: number;
+	errorMessage: string;
+	stackTrace: string | null;
+	requestMethod: string;
+	requestPath: string;
+	requestIp: string;
+	meta: Record<string, any>;
+	// Expansions:
+	user?: User;
+}
+
 export interface AccessList {
 	id?: number;
 	createdOn?: string;

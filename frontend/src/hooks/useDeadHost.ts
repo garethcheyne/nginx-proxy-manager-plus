@@ -17,6 +17,7 @@ const fetchDeadHost = (id: number | "new") => {
 			enabled: true,
 			hstsEnabled: false,
 			hstsSubdomains: false,
+			analyticsEnabled: false,
 		} as DeadHost);
 	}
 	return getDeadHost(id, ["owner"]);

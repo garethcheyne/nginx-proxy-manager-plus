@@ -27,6 +27,7 @@ const fetchRedirectionHost = (id: number | "new") => {
 			enabled: true,
 			hstsEnabled: false,
 			hstsSubdomains: false,
+			analyticsEnabled: false,
 		} as RedirectionHost);
 	}
 	return getRedirectionHost(id, ["owner"]);

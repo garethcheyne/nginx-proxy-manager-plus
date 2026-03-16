@@ -23,7 +23,8 @@
 		"locations",
 		"hsts_enabled",
 		"hsts_subdomains",
-		"trust_forwarded_proto"
+		"trust_forwarded_proto",
+		"analytics_enabled"
 	],
 	"properties": {
 		"id": {
@@ -145,6 +146,11 @@
 		"trust_forwarded_proto":{
 			"type": "boolean",
 			"description": "Trust the forwarded headers",
+			"example": false
+		},
+		"analytics_enabled": {
+			"type": "boolean",
+			"description": "Enable analytics tracking for this host",
 			"example": false
 		},
 		"certificate": {

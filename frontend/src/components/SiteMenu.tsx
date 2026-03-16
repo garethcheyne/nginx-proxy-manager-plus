@@ -1,6 +1,8 @@
 import {
+	IconBug,
 	IconBook,
 	IconChartBar,
+	IconDatabaseExport,
 	IconDeviceDesktop,
 	IconHome,
 	IconLock,
@@ -99,6 +101,18 @@ const menuItems: MenuItem[] = [
 		to: "/audit-log",
 		icon: IconBook,
 		label: "auditlogs",
+		permissionSection: ADMIN,
+	},
+	{
+		to: "/error-log",
+		icon: IconBug,
+		label: "errorlogs",
+		permissionSection: ADMIN,
+	},
+	{
+		to: "/backup",
+		icon: IconDatabaseExport,
+		label: "backup",
 		permissionSection: ADMIN,
 	},
 	{

@@ -1,0 +1,10 @@
+{
+  "database": {
+    "engine": "pg",
+    "host": "localhost",
+    "name": "npm",
+    "user": "npm",
+    "password": "npmpass",
+    "port": 5433
+  }
+}

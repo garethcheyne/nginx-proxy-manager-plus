@@ -137,6 +137,9 @@
 	"auto": {
 		"defaultMessage": "Auto"
 	},
+	"backup": {
+		"defaultMessage": "Backup"
+	},
 	"cancel": {
 		"defaultMessage": "Cancel"
 	},
@@ -416,17 +419,20 @@
 	"error.required": {
 		"defaultMessage": "This is required"
 	},
+	"errorlogs": {
+		"defaultMessage": "Error Log"
+	},
 	"expires.on": {
 		"defaultMessage": "Expires: {date}"
 	},
 	"footer.github-fork": {
 		"defaultMessage": "Fork me on Github"
 	},
-	"host.flags.block-exploits": {
-		"defaultMessage": "Block Common Exploits"
-	},
 	"host.flags.analytics-enabled": {
 		"defaultMessage": "Enable Analytics"
+	},
+	"host.flags.block-exploits": {
+		"defaultMessage": "Block Common Exploits"
 	},
 	"host.flags.cache-assets": {
 		"defaultMessage": "Cache Assets"

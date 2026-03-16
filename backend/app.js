@@ -5,6 +5,7 @@ import fileUpload from "express-fileupload";
 import { isDebugMode } from "./lib/config.js";
 import cors from "./lib/express/cors.js";
 import jwt from "./lib/express/jwt.js";
+import internalErrorLog from "./internal/error-log.js";
 import { debug, express as logger } from "./logger.js";
 import mainRoutes from "./routes/main.js";
 
@@ -86,7 +87,25 @@ app.use((err, req, res, _) => {
 		}
 	}
 
-	res.status(err.status || 500).send(payload);
+	// Log error to database for the Error Log UI
+	const errorCode = err.status || 500;
+	const errorType = err.constructor?.name || "Error";
+	internalErrorLog.add({
+		error_type: errorType,
+		error_code: errorCode,
+		error_message: err.message || "Unknown error",
+		stack_trace: err.stack || null,
+		request_method: req.method || "",
+		request_path: (req.baseUrl || "") + (req.path || ""),
+		request_ip: req.ip || req.connection?.remoteAddress || "",
+		user_id: res.locals?.access?.token?.getUserId?.(0) || 0,
+		meta: {
+			previous: err.previous || null,
+			public: err.public || false,
+		},
+	});
+
+	res.status(errorCode).send(payload);
 });
 
 export default app;

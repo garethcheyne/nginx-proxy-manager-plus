@@ -19,7 +19,8 @@
 		"block_exploits",
 		"advanced_config",
 		"enabled",
-		"meta"
+		"meta",
+		"analytics_enabled"
 	],
 	"additionalProperties": false,
 	"properties": {
@@ -96,6 +97,11 @@
 				"nginx_online": true,
 				"nginx_err": null
 			}
+		},
+		"analytics_enabled": {
+			"type": "boolean",
+			"description": "Enable analytics tracking for this host",
+			"example": false
 		},
 		"certificate": {
 			"oneOf": [

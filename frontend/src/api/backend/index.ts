@@ -1,5 +1,6 @@
 export * from "./checkVersion";
 export * from "./analytics";
+export * from "./backup";
 export * from "./createAccessList";
 export * from "./createCertificate";
 export * from "./createDeadHost";
@@ -20,6 +21,7 @@ export * from "./getAccessList";
 export * from "./getAccessLists";
 export * from "./getAuditLog";
 export * from "./getAuditLogs";
+export * from "./getErrorLogs";
 export * from "./getCertificate";
 export * from "./getCertificateDNSProviders";
 export * from "./getCertificates";
