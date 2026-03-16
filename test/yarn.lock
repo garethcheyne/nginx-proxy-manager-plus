@@ -191,10 +191,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@quobix/vacuum@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@quobix/vacuum/-/vacuum-0.24.0.tgz#7461d0f745e1a97827fc20b04f8c1701a5f1a0e0"
-  integrity sha512-Ee7c2XF6FY3bf3BzOCh/Ku2abxMN2iqYADHf933EkgAQ4u3x3eXXvlAa8UQo/lt7ZhWk0HHXQ55hnMhpbJsuPg==
+"@quobix/vacuum@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@quobix/vacuum/-/vacuum-0.25.0.tgz#56525d1fbfbb4cd65d0dc39cded6501b21312797"
+  integrity sha512-skIMbkn1iR8Nt03KDdGbnr9D8zKX0K7HIcbA2/KZ2vs7BMyH9kTpL5CXrHlh9JXK89f+wkuc2z294rOnjRl93Q==
   dependencies:
     https-proxy-agent "^7.0.6"
     node-fetch "^3.3.2"
@@ -635,9 +635,9 @@ cypress-wait-until@^3.0.2:
   integrity sha512-iemies796dD5CgjG5kV0MnpEmKSH+s7O83ZoJLVzuVbZmm4lheMsZqAVT73hlMx4QlkwhxbyUzhOBUOZwoOe0w==
 
 cypress@^15.11.0:
-  version "15.11.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-15.11.0.tgz#7402d0a2bb4573b6c6655191ad170cff1985ff3f"
-  integrity sha512-NXDE6/fqZuzh1Zr53nyhCCa4lcANNTYWQNP9fJO+tzD3qVTDaTUni5xXMuigYjMujQ7CRiT9RkJJONmPQSsDFw==
+  version "15.12.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-15.12.0.tgz#84be43a9d85cb390ca404e5b1d030568a06ab4eb"
+  integrity sha512-B2BRcudLfA4NZZP5QpA45J70bu1heCH59V1yKRLHAtiC49r7RV03X5ifUh7Nfbk8QNg93RAsc6oAmodm/+j0pA==
   dependencies:
     "@cypress/request" "^3.0.10"
     "@cypress/xvfb" "^1.2.4"
@@ -845,9 +845,9 @@ eslint-plugin-chai-friendly@^1.1.0:
   integrity sha512-+T1rClpDdXkgBAhC16vRQMI5umiWojVqkj9oUTdpma50+uByCZM/oBfxitZiOkjMRlm725mwFfz/RVgyDRvCKA==
 
 eslint-plugin-cypress@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-6.1.0.tgz#5619ceb67d09d74cb5225408bb36c962afb94880"
-  integrity sha512-B8sxtNpINDxFkmsu1qKYjg70VsP8SGneEXgLcZMk1bUZcW08S+JyaiMdof1x6dmt02FgOD7YkT4wOaOD5HotJw==
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-6.2.0.tgz#220992444debed13587a1fb3356e7e952245ac43"
+  integrity sha512-G/8XT9Si0GaqGRVM0sgnRACCI9mbzsC4CisvaaiuJlQoCseKz6C51kq5fcC/yKmwO4dTsWCdhbgaiQtZFGSONg==
   dependencies:
     globals "^17.3.0"
 
