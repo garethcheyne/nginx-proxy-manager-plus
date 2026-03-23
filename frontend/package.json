@@ -41,8 +41,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.5",
-		"@formatjs/cli": "^6.13.0",
-		"@tanstack/react-query-devtools": "^5.91.3",
+		"@formatjs/cli": "^6.14.0",
+		"@tanstack/react-query-devtools": "^5.95.0",
 		"@testing-library/dom": "^10.4.1",
 		"@testing-library/jest-dom": "^6.9.1",
 		"@testing-library/react": "^16.3.2",
@@ -55,12 +55,12 @@
 		"happy-dom": "^20.8.3",
 		"postcss": "^8.5.8",
 		"postcss-simple-vars": "^7.0.1",
-		"sass": "^1.97.3",
+		"sass": "^1.98.0",
 		"tmp": "^0.2.5",
 		"typescript": "5.9.3",
 		"vite": "^7.3.1",
 		"vite-plugin-checker": "^0.12.0",
 		"vite-tsconfig-paths": "^6.1.1",
-		"vitest": "^4.0.18"
+		"vitest": "^4.1.0"
 	}
 }
